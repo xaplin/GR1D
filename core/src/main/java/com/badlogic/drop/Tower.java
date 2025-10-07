@@ -8,12 +8,17 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Vector2;
 
 /**
- *
+ * 
+ * @author tdewe
+ */
+
+/**
+ * Tower superclass that creates a layout used for all tower units.
  * @author tdewe
  */
 public class Tower {
     //Tower interaction variables
-    int damage;
+    float damage;
     int range;
     int cost;
     int fireRate; //int correct type? maybe float?
@@ -27,8 +32,14 @@ public class Tower {
     //Default Sprites
     Sprite defaultTowerSprite;
     Sprite defaultBulletSprite;
-    
+   
     public Tower() { //Constructor
+        /**
+         * Constructor for the tower superclass, setting default values.
+         * @author tdewe
+         * @param Tower()
+         * 
+         */
         
         //Setting up textures and sprites for a default class, will be overridden in children
         //defaultTowerSpriteTexture = new Texture("whatever.png");
@@ -38,7 +49,7 @@ public class Tower {
         
         
         //Setting default variable values
-        damage = 0;
+        damage = 0.0f;
         range = 0;
         cost = 0;
         fireRate = 0;

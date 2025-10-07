@@ -14,7 +14,7 @@ import com.badlogic.gdx.math.Vector2;
  */
 public class Enemy {
     
-    int health;
+    float health;
     float speed; //Maybe int? Could call it velocity and make it a vector
     Vector2 velocity;
     float MAX_VELOCITY;
@@ -32,7 +32,7 @@ public class Enemy {
         defaultEnemySprite = new Sprite(defaultEnemyTexture);
         
         //Setting default values for variables
-        health = 0;
+        health = 0.0f;
         speed = 0;
         MAX_VELOCITY = 0;
         location = new Vector2();

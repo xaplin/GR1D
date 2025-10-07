@@ -22,7 +22,7 @@ public class PacketEnemy extends Enemy {
         packetSprite = new Sprite(packetTexture);
         
         // Variables for default packet stats placeholders for now
-        health = 100;
+        health = 100.0f;
         speed = 0;
     }
 }
