@@ -8,11 +8,6 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Vector2;
 
 /**
- * 
- * @author tdewe
- */
-
-/**
  * Tower superclass that creates a layout used for all tower units.
  * @author tdewe
  */
