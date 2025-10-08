@@ -47,7 +47,10 @@ public class Enemy {
         
     }
     
-    // Update Enemy velocity by mulitplying new Velocity by speed
+    /**
+     * changes velocity
+     * @param newVelocity as new velocity
+     */
     public void ChangeVelocity(Vector2 newVelocity) {
         velocity.x = speed * newVelocity.x;
         velocity.y = speed * newVelocity.y;

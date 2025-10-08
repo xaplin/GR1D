@@ -8,7 +8,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 
 /**
- *
+ * sniper subclass
  * @author paulcaplin
  */
 public class SniperTower extends Tower {
@@ -19,11 +19,13 @@ public class SniperTower extends Tower {
     Texture packetTexture;
     Sprite packetSprite;
     
-    public SniperTower() {
-        /**
+    
+    /**
          * SniperTower() is the constructor for the Sniper class
          * @author xaplinzz
          */
+    public SniperTower() {
+        
         //Packet texturing and sprite
         packetTexture = new Texture("sniper.png");
         packetSprite = new Sprite(packetTexture);

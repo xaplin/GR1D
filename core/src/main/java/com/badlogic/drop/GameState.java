@@ -62,6 +62,8 @@ public class GameState {
      */
     public Tower GetTower(int x, int y) {
         // TODO implement GetTower method
+        
+        return null;
     }
 
     /**
@@ -71,6 +73,7 @@ public class GameState {
      */
     public int GetCurrentRound() {
         // TODO implement GetCurrentRound method
+        return 0;
     }
     
     /**
@@ -80,6 +83,7 @@ public class GameState {
      */
     public int GetMoney() {
         // TODO implement GetMoney method
+        return 0;
     }
     
 }

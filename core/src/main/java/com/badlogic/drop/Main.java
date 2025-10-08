@@ -2,8 +2,22 @@ package com.badlogic.drop;
 
 import com.badlogic.gdx.ApplicationListener;
 
-/** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
+/** 
+ * 
+ * {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. 
+ */
 public class Main implements ApplicationListener {
+    
+    
+    
+    /**
+     * its main
+     * @author jacob
+     */
+    public Main(){
+        
+    }
+    
     @Override
     public void create() {
         // Prepare your application here.

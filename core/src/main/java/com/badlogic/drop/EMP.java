@@ -16,6 +16,10 @@ public class EMP extends Tower{
     Texture empTexture;
     Sprite empSprite;
     
+    /**
+     * EMP is a Tower subclass that creates a EMP tower unit.
+     * @author tdewe
+     */
     
     public EMP() { //Constructor
         /**

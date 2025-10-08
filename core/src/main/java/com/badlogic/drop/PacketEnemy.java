@@ -8,7 +8,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 
 /**
- *
+ * packet subclass
  * @author tdewe
  */
 public class PacketEnemy extends Enemy {
@@ -16,13 +16,18 @@ public class PacketEnemy extends Enemy {
     Texture packetTexture;
     Sprite packetSprite;
     
+    
+    /**
+         * PacketEnemy() is the constructor for the packet class
+         * @author tdewe
+         */
     public PacketEnemy() {
         //Packet texturing and sprite
         packetTexture = new Texture("packet.png");
         packetSprite = new Sprite(packetTexture);
         
         // Variables for default packet stats placeholders for now
-        health = 100.0f;
+        health = 100;
         speed = 0;
     }
 }

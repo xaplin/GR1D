@@ -8,7 +8,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 
 /**
- *
+ * minigun subclass
  * @author tdewe
  */
 public class Minigun extends Tower{
@@ -19,11 +19,13 @@ public class Minigun extends Tower{
     Texture minigunTexture;
     Sprite minigunSprite;
     
-    public Minigun() {
-        /**
+    
+    /**
          * Minigun() is the constructor for the Minigun class
          * @author tdewe
          */
+    public Minigun() {
+        
         minigunTexture = new Texture("minigun.png");
         minigunSprite = new Sprite(minigunTexture);
     }

@@ -28,13 +28,13 @@ public class Tower {
     Sprite defaultTowerSprite;
     Sprite defaultBulletSprite;
    
-    public Tower() { //Constructor
-        /**
+    
+    /**
          * Constructor for the tower superclass, setting default values.
          * @author tdewe
-         * @param Tower()
-         * 
          */
+    public Tower() { //Constructor
+        
         
         //Setting up textures and sprites for a default class, will be overridden in children
         //defaultTowerSpriteTexture = new Texture("whatever.png");
