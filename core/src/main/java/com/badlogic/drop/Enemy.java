@@ -14,11 +14,14 @@ import com.badlogic.gdx.math.Vector2;
  */
 public class Enemy {
     
-    float health;
+    int health;
     float speed; //Maybe int? Could call it velocity and make it a vector
     Vector2 velocity;
-    float MAX_VELOCITY;
+    
     Vector2 location;
+    Vector2 currentTile;
+    
+    float percentage; // percentage along track
     
     // Default Textures and Sprites
     Texture defaultEnemyTexture;
@@ -32,12 +35,41 @@ public class Enemy {
         defaultEnemySprite = new Sprite(defaultEnemyTexture);
         
         //Setting default values for variables
-        health = 0.0f;
+        health = 0;
         speed = 0;
-        MAX_VELOCITY = 0;
+        
         location = new Vector2();
         velocity = new Vector2();
         
     }
+    
+    // Update Enemy velocity by mulitplying new Velocity by speed
+    public void ChangeVelocity(Vector2 newVelocity) {
+        velocity.x = speed * newVelocity.x;
+        velocity.y = speed * newVelocity.y;
+        
+    }
+    
+    // Subtract Damage from Health
+    public void TakeDamage(int damage) {
+        health -= damage;
+        
+    }
+    
+    // Return Percentage
+    public float GetPercentage() {
+        return percentage;
+    }
+    
+     // Return Location
+    public Vector2 GetLocation() {
+        return location;
+    }
+    
+    // Return Current Tile
+    public Vector2 GetCurrentTile() {
+        return currentTile;
+    }
+    
     
 }
