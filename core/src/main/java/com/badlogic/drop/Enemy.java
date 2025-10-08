@@ -9,8 +9,8 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Vector2;
 
 /**
- *
- * @author tdewe
+ * Tower superclass that creates a layout used for all tower units.
+ * @author jacob
  */
 public class Enemy {
     
@@ -28,6 +28,10 @@ public class Enemy {
     Sprite defaultEnemySprite;
     
     
+    /**
+         * Constructor for the tower superclass, setting default values.
+         * @author tdewe
+         */
     public Enemy() {
         
         //Setting textures and sprites
@@ -50,23 +54,38 @@ public class Enemy {
         
     }
     
-    // Subtract Damage from Health
+    /**
+     * Subtracts specified damage from health
+     * @param damage as int damage taken
+     */
     public void TakeDamage(int damage) {
         health -= damage;
         
     }
     
-    // Return Percentage
+    /**
+     * Gets percentage along track
+     *
+     * @return percentage as a float.
+     */
     public float GetPercentage() {
         return percentage;
     }
     
-     // Return Location
+    /**
+     * Gets current location
+     *
+     * @return location as a Vector2.
+     */
     public Vector2 GetLocation() {
         return location;
     }
     
-    // Return Current Tile
+    /**
+     * Gets current tile that enemy is on
+     *
+     * @return current tile as a Vector2.
+     */
     public Vector2 GetCurrentTile() {
         return currentTile;
     }
